@@ -16,7 +16,7 @@ var bodyparser      = require("body-parser"),                   //middleware to 
     
 
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true }); //connecting the database "yelp_camp" to the file
+mongoose.connect("mongodb+srv://tarun:tarun@cluster0-a0vpp.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true }); //connecting the database "yelp_camp" to the file
 // seedDB(); 
 
 app.use(bodyparser.urlencoded({extended: true}));                                   //app.use("url_part",function), it only responds to the request conatining "url_part", as no url_part is there it acts as middleware and parses the entire page, true indicates to deep parse 
